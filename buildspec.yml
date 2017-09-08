@@ -1,0 +1,13 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - echo hello world
+artifacts:
+  files:
+    - index.html
+    - favicon.ico
+    - resume.pdf
+    - styles/main.css
+    - images/*
