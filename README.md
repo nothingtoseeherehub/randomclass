@@ -11,3 +11,6 @@ running out of T2 instance credit makes creating node js in a container
 a problematic event
 
 seems to be limitted to linux academy
+
+S3 logging exceeding tier
+
