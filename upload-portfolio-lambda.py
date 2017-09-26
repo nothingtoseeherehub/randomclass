@@ -19,7 +19,7 @@ def lambda_handler(event, context):
         job = event.get("CodePipeline.job")
         if job:
             for artifact in job["data"]["inputArtifacts"]:
-                if artifact["name"]="MyAppBuild":
+                if artifact["name"] == "MyAppBuild":
                     location = artifact["location"]["s3Location"]
         
         print "Building portfolio from " + str(location)
