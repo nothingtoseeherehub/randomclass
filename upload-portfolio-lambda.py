@@ -38,12 +38,12 @@ def lambda_handler(event, context):
                 portfolio_bucket.Object(nm).Acl().put(ACL='public-read')
                 
         print "job done"
-        topic.publish(Subject="test 2",Message="lambda message succeed")
+        topic.publish(Subject="Portfolio deployed",Message="lambda portfolio deployed succeed")
         if job:
             codepipeline = boto3.client("codepipeline")
             codepipeline.put_job_success_result(jobId=job["id"])
             
     except:
-        topic.publish(Subject="test 2",Message="lamba message fail")
+        topic.publish(Subject="Portfolio not deployed ",Message="lamba message fail")
 
     return 'Hello from Lambda'
