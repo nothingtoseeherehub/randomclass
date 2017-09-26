@@ -12,7 +12,7 @@ def lambda_handler(event, context):
     topic = sns.Topic('arn:aws:sns:us-east-1:473673896446:randomclass')
 
     location = {
-        "bucketName": "resumestormageddondarkness.com"
+        "bucketName": "resumestormageddondarkness.com",
         "objectKey": "portfolio.zip"
     }
     try:
