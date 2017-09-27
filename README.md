@@ -14,3 +14,4 @@ seems to be limitted to linux academy
 
 S3 logging exceeding tier
 
+checking npm installation for babel
