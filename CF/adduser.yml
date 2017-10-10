@@ -34,7 +34,7 @@ Resources:
       LoginProfile:
         Password:
           Ref: Password
-        UserName:
+      UserName:
           Ref: EnteredUserName
   CFNUserGroup:
     Type: AWS::IAM::Group
