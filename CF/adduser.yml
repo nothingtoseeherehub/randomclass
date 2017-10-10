@@ -20,6 +20,13 @@ Parameters:
     MinLength: '1'
     MaxLength: '41'
     ConstraintDescription: the password must be between 1 and 41 characters
+  EnteredUserName:
+#    NoEcho: 'true'
+    Type: String
+    Description: New account Name
+    MinLength: '1'
+    MaxLength: '20'
+    ConstraintDescription: the password must be between 1 and 20 characters
 Resources:
   CFNUser:
     Type: AWS::IAM::User
@@ -27,6 +34,8 @@ Resources:
       LoginProfile:
         Password:
           Ref: Password
+        UserName:
+          Ref: EnteredUserName
   CFNUserGroup:
     Type: AWS::IAM::Group
   CFNAdminGroup:
@@ -86,4 +95,3 @@ Outputs:
       - CFNKeys
       - SecretAccessKey
     Description: AWSSecretKey of new user
-
