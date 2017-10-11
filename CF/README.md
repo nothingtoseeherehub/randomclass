@@ -14,3 +14,5 @@ Will likely need to create docker container
 May need to update the dockerfile for my virtualos to contain the npm
 test items and react16 components needed for testing and completing the class
 
+mental note, turning on cloudtrail monitoring will exceed Free Tier S3 limits
+
