@@ -40,6 +40,9 @@ Resources:
     Type: AWS::IAM::Group
   CFNAdminGroup:
     Type: AWS::IAM::Group
+    Properties:
+      GroupName:
+        Fn::Sub: "PortolioAdmins${AWS::StackName}"
   Users:
     Type: AWS::IAM::UserToGroupAddition
     Properties:
