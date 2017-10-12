@@ -38,11 +38,14 @@ Resources:
           Ref: EnteredUserName
   CFNUserGroup:
     Type: AWS::IAM::Group
+    Properties:
+      GroupName:
+        Fn::Sub: "PortolioUser-${AWS::StackName}"
   CFNAdminGroup:
     Type: AWS::IAM::Group
     Properties:
       GroupName:
-        Fn::Sub: "PortolioAdmins${AWS::StackName}"
+        Fn::Sub: "PortolioAdmins-${AWS::StackName}"
   Users:
     Type: AWS::IAM::UserToGroupAddition
     Properties:
