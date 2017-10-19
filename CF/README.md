@@ -16,3 +16,5 @@ test items and react16 components needed for testing and completing the class
 
 mental note, turning on cloudtrail monitoring will exceed Free Tier S3 limits
 
+exeeding looks like only about a penny a month
+
